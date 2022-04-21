@@ -1,0 +1,9 @@
+{
+  "name": "calculator",
+  "version": "0.0.1",
+  "description": "Calculator for training fullstack skills",
+  "main": "index.js",
+  "repository": "https://github.com/censoretti/calculator.git",
+  "author": "Totti",
+  "license": "MIT"
+}
