@@ -7,7 +7,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	background: linear-gradient(to right, #00aaff, #00ff6c);
+	background: rgba(0,0,0)
 }
 
 .calculatorGrid {
@@ -19,20 +19,11 @@ body {
 	grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
-.calculatorGrid > button {
+button {
 	cursor: pointer;
 	font-size: 2rem;
-	border: 1px solid white;
+	border: 0px;
 	outline: none;
-	background-color: rgba(255,255,255,.75);
-}
-
-.calculatorGrid > button:hover {
-	background-color: rgba(255,255,255,.9);
-}
-
-.calculatorGrid > button:active {
-	background-color: rgba(255,255,255,.55);
 }
 
 .span-two {
@@ -41,7 +32,7 @@ body {
 
 .output {
 	grid-column: 1 / -1;
-	background-color: rgba(0,0,0,.75);
+	background-color: rgb(20, 20, 20);
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-around;
@@ -49,6 +40,8 @@ body {
 	padding: 10px;
 	word-wrap: break-word;
 	word-break: break-all;
+	border-radius: 20px 20px 0 0;
+	margin-bottom: 5px
 }
 
 .output .previousOperand {
@@ -59,4 +52,57 @@ body {
 .output .currentOperand {
 	color: white;
 	font-size: 2.5rem;
+}
+
+button {
+	border-radius: 50px;
+	margin: 2px;
+}
+
+.operation {
+	background-color: rgb(255, 166, 0, .75);
+}
+
+.operation:hover {
+	background-color: rgb(255, 166, 0, .9);
+}
+
+.operation:active {
+	background-color: rgb(255, 166, 0, .55);
+}
+
+.option {
+	background-color: rgb(134, 134, 134, .75);
+}
+
+.option:hover {
+	background-color: rgb(134, 134, 134, .9);
+}
+
+.option:active {
+	background-color: rgb(134, 134, 134, .55);
+}
+
+.equal {
+	background-color: rgb(255, 81, 0, .75);
+}
+
+.equal:hover {
+	background-color: rgb(255, 81, 0, .9);
+}
+
+.equal:active {
+	background-color: rgb(255, 81, 0, .55);
+}
+
+.number {
+	background-color: rgba(255,255,255,.75);
+}
+
+.number:hover {
+	background-color: rgba(255,255,255,.9);
+}
+
+.number:active {
+	background-color: rgba(255,255,255,.55);
 }

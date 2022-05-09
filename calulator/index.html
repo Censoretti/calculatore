@@ -9,29 +9,41 @@
 	<title>Calculator</title>
 </head>
 <body>
-	<div class="calculatorGrid">
+	<div dataGridOptions class="calculatorGrid">
 		<div class="output">
 			<div dataPreviousOperand class="previousOperand"></div>
 			<div dataCurrentOperand class="currentOperand"></div>
 		</div>
-		<button dataClear class="span-two">AC</button>
-		<button dataDelete>Del</button>
-		<button dataOperation>/</button>
-		<button dataNumber>1</button>
-		<button dataNumber>2</button>
-		<button dataNumber>3</button>
-		<button dataOperation>*</button>
-		<button dataNumber>4</button>
-		<button dataNumber>5</button>
-		<button dataNumber>6</button>
-		<button dataOperation>+</button>
-		<button dataNumber>7</button>
-		<button dataNumber>8</button>
-		<button dataNumber>9</button>
-		<button dataOperation>-</button>
-		<button dataNumber>.</button>
-		<button dataNumber>0</button>
-		<button dataEqual class="span-two">=</button>
+		
+		<button dataChangeSign class="option">&#177;</button>
+		<button dataClear class="option">AC</button>
+		<button dataDelete class="option">Del</button>
+		<button dataGear class="option">></button>
+		<button dataME hidden class="hidden option" >ME</button>
+		
+		<button dataNumber value="7" class="number">7</button>
+		<button dataNumber value="8" class="number">8</button>
+		<button dataNumber value="9" class="number">9</button>
+		<button dataOperation value="/" class="operation">&divide;</button>
+		<button dataOperation hidden value="%" class="hidden operation">%</button>
+		
+		<button dataNumber value="4" class="number">4</button>
+		<button dataNumber value="5" class="number">5</button>
+		<button dataNumber value="6" class="number">6</button>
+		<button dataOperation value="*" class="operation">X</button>
+		<button dataOperation hidden value="^" class="hidden operation">^</button>
+		
+		<button dataNumber value="1" class="number">1</button>
+		<button dataNumber value="2" class="number">2</button>
+		<button dataNumber value="3" class="number">3</button>
+		<button dataOperation value="-" class="operation">-</button>
+		<button dataSquare hidden value="s" class="hidden operation">&#8730;</button>
+		
+		<button dataNumber value="." class="number">.</button>
+		<button dataNumber value="0" class="number">0</button>
+		<button dataEqual class="equal">=</button>
+		<button dataOperation value="+" class="operation">+</button>
+		<button dataRegister hidden value="" class="hidden operation">R</button>
 
 	</div>
 </body>
